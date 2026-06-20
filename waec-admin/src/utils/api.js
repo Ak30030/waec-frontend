@@ -1,6 +1,5 @@
 // Set your Render backend URL here
-const API_BASE = import.meta.env.VITE_API_URL || "https://waec-backend.onrender.com";
-
+const API_BASE = import.meta.env.VITE_API_URL || "https://waec-backend-g41k.onrender.com";
 const getToken = () => localStorage.getItem("waec_admin_token");
 
 const request = async (path, options = {}) => {
