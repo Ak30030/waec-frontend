@@ -27,7 +27,7 @@ export default function Login() {
   return (
     <div className="login-page">
       <div className="login-card">
-        <div className="brand">WaecSell</div>
+        <div className="brand">En Shalom Business</div>
         <div className="sub">Admin Panel</div>
 
         {error && <div className="error-banner">{error}</div>}

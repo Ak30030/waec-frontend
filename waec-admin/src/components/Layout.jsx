@@ -16,7 +16,7 @@ export default function Layout() {
     <div className="app-shell">
       <aside className="sidebar">
         <div className="sidebar-brand">
-          WaecSell
+          En Shalom Business
           <span>Admin Panel</span>
         </div>
 
