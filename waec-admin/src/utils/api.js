@@ -1,5 +1,5 @@
 // Set your Render backend URL here
-const API_BASE = import.meta.env.VITE_API_URL || "https://waec-backend-g41k.onrender.com";
+const API_BASE = import.meta.env.VITE_API_URL || "https://waec-backend.onrender.com";
 
 const getToken = () => localStorage.getItem("waec_admin_token");
 
@@ -53,6 +53,11 @@ export const api = {
   // Users
   getUsers: () => request("/admin/users"),
   deleteUser: (id) => request(`/admin/users/${id}`, { method: "DELETE" }),
+
+  // Settings
+  getSettings: () => request("/admin/settings"),
+  updateSettings: (payload) =>
+    request("/admin/settings", { method: "PUT", body: JSON.stringify(payload) }),
 };
 
 export { getToken };
