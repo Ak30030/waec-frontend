@@ -15,7 +15,7 @@ export default function Users() {
   const [role, setRole] = useState("admin");
   const [creating, setCreating] = useState(false);
 
-  const isSuperadmin = admin?.role === "superadmin";
+  const isSuperadmin = true; // For now, all admins are superadmins. Adjust this logic when implementing roles.
 
   const loadUsers = async () => {
     setLoading(true);
