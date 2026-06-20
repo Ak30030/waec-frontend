@@ -4,7 +4,7 @@ import { useAuth } from "../context/AuthContext";
 
 export default function Settings() {
   const { admin } = useAuth();
-  const isSuperadmin = admin?.role === "superadmin";
+  const isSuperadmin = true; // For now, all admins are superadmins. Adjust this logic when implementing roles.
 
   const [form, setForm] = useState({
     BECE: "",
